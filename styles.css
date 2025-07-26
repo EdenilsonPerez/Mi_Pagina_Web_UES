@@ -1,0 +1,296 @@
+/*Para la letra del titulo de la pagina desde GoogleFonts */
+.oswald-uniquifier {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*Recuadro para el titulo de la pagina*/
+.recuadro-titulo {
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  border: 5px solid hsl(355, 60%, 30%);
+  margin: 20px auto;    
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: hsl(355, 60%, 30%);
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Para letras de Bienvenida*/
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Para todos los textos vayan centrados*/
+.centrado{
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*Tipo de letra para el pensamiento de la presentacion*/
+.edu-qld-hand-uniquifier {
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*Letra para los textos*/
+.letra-parrafos {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.5;
+}
+
+/*Recuadro del pensamiento*/
+.recuadro-pensamiento {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 15px;
+  border: 2px solid #60d41269;
+  position: relative;
+  top: 20%; 
+  margin: 0 auto; 
+  margin-bottom: 50px;
+  background: rgba(206, 186, 186, 0.2);
+}
+
+/*Para el boton de enlace al formulario*/
+#enlace {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b60e1cc7;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*Para el boton de enviar*/
+#enviar {
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #07c526c7;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*Para rellenar el fondo*/
+body {
+  font-family:'Segoe UI', sans-serif;
+  background: hsl(42, 100%, 96%);
+  color: #222;
+  line-height: 1.6;
+}
+
+/*Layout general usando Grid*/
+.layout-grid {
+  display: grid;
+  grid-template-areas:
+    "aside1 main"
+    "aside2 main"
+    "footer  footer";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+/*Para transparentar donde estan los titulos*/
+h1, h2 {
+  background-color: transparent; 
+  margin: 0;
+  padding: 0;
+}
+
+/*Encabezado*/
+header {
+  background: #0077cc;
+  padding: 20px;
+  text-align: center;
+  background-image: url("img/Edificio_EscuelaMatematicas_Azul.jpg");
+  background-size: cover;           
+  background-position: center;  
+}
+
+/*Menu*/
+.nav-list {
+  margin: 15px 0; 
+  display: flex; 
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  background-color: transparent;
+}
+
+.nav-list li a {
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 3, 8);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.nav-list li a:hover{
+  background-color: transparent;
+}
+
+/*Para el aside que contiene la presentacion*/
+.aside1 {
+  grid-area: aside1;
+  background: #f3cbd7;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 44, 124);
+}
+
+.logo-ues {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px auto;
+}
+
+/*Para el aside que tiene las Opiniones*/
+.aside2 {
+  grid-area: aside2;
+  /*background: #00d62e;*/
+  background-image: url(https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;           
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgb(0, 44, 124);
+}
+
+/*Main*/
+main {
+  grid-area: main;
+  background: #fff;
+  background-image: url(https://plus.unsplash.com/premium_photo-1664372145591-f7cc308ff5da?q=80&w=396&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  padding: 20px;
+  border-radius: 8px;
+  background-size: cover;           
+  background-position: center;
+}
+
+/*Para la imagen con los estudiantes se adapte al main*/
+.estudiantes {
+  display: block;
+  max-width: 50%;    
+  height: auto;      
+  margin: 0 auto;  
+  margin-bottom: 40px;    
+}
+
+/*Cajitas para los listados de carreras*/
+.caja {
+  background: rgba(131, 108, 108, 0.7);
+}
+
+/*Footer*/
+footer {
+  grid-area: footer;
+  background: #8d8c8c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgb(65, 64, 64);
+}
+
+/* Responsive con Media Queries */
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-areas:
+      "aside1"
+      "main"
+      "aside2"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .recuadro-titulo {
+    font-size: 28px;
+    padding: 10px;
+    width: 95%;
+  }
+
+  h2, h1 {
+    font-size: 20px;
+  }
+
+  .logo-ues {
+    width: 80%;
+  }
+
+  .letra-parrafos {
+    font-size: 16px;
+  }
+
+  .caja ul {
+    width: 90%;
+  }
+
+  .inicio {
+    font-size: 28px;
+    padding: 10px;
+    width: 95%;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+/*Encabezado del formulario*/
+.inicio{
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  width: 90%;
+  max-width: 615px;
+  color: rgb(253, 253, 253);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+  line-height: 2.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 40);
+  background-image: url(img/Auditorio.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+/*Para el formulario*/
+.form {
+  background-color: #0077cc;
+  background-image: url(https://plus.unsplash.com/premium_photo-1725296624057-d723d163943e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;           
+  background-position: center;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto 15px auto;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UES - Facultad de Ciencias Naturales y Matemática</title>
+    <!--Fuente Oswald desde Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fuente Satisfy desde Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fuente Edu QLD Hand desde Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fuente Roboto desde Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--Llamar al archivo Css-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--Para el favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!--Aplicando CSS Interno para los titulos por contenido-->
+    <style>
+      /*Para itulos del contenido*/
+      h3 {
+        color: darkgreen;
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(200, 200, 200, 0.7);
+        box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.4);
+      }
+      /*Para titulos de listados de carreras*/
+      h4 {
+        color: rgb(0, 8, 119);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+
+    <!--ENCABEZADOS-->
+    <header>
+      <!--Identificacion de la Universidad-->
+      <h2
+        class="oswald-uniquifier"
+        style="
+          color: hsl(0, 0%, 100%);
+          text-align: center;
+          text-shadow: 2px 2px 4px rgb(0, 44, 124);
+        "
+      >
+        UNIVERSIDAD DE EL SALVADOR (UES)
+      </h2>
+      <!--Titulo principal de la Facultad-->
+      <h1 class="recuadro-titulo oswald-uniquifier">
+        Facultad de Ciencias Naturales y Matemática
+      </h1>
+      <!--Bienvenida-->
+      <h2
+        class="satisfy-regular"
+        style="
+          color: antiquewhite;
+          text-align: center;
+          font-size: 35px;
+          text-shadow: 2px 2px 4px rgba(1, 3, 0, 0.2);
+        "
+      >
+        Bienvenidos a nuestro sitio web
+      </h2>
+
+      <!--Menu de Navegacion-->
+      <nav>
+        <ul
+          class="nav-list letra-parrafos"
+          style="color: rgb(255, 255, 255); text-align: center; font-size: 25px"
+        >
+          <li><a href="#presentacion">Presentación</a></li>
+          <li><a href="#oferta">Oferta académica</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--LAYOUT -->
+    <div class="layout-grid">
+      <!--ASIDE 1 - PRESENTACION -->
+      <aside class="aside1" id="presentacion">
+        <h3
+          class="centrado"
+          style="text-shadow: 1px 1px 3px rgb(255, 255, 255)"
+        >
+          Presentacion
+        </h3>
+        <!-- Logo Ues -->
+        <img
+          src="img/Logo_UES.png"
+          alt="Logo de la UES"
+          class="logo-ues"
+          style="margin-bottom: 80px; margin-top: 80px"
+        />
+
+        <p
+          class="centrado letra-parrafos"
+          style="
+            width: 80%;
+            text-align: justify;
+            margin: 20px auto 0 auto;
+            color: rgb(3, 5, 143);
+            text-shadow: 1px 1px 3px gray;
+          "
+        >
+          La Facultad de Ciencias Naturales y Matemática de la Universidad de El
+          Salvador (UES) es un lugar donde se estudia y se investiga la ciencia.
+          Aquí se forman profesionales en áreas como la biología, química,
+          física, matemática y computación. Nuestra facultad promueve el
+          pensamiento crítico, la curiosidad científica y el compromiso con el
+          desarrollo del país.
+        </p>
+        <!--Pqueña presentacion sobre lo que es la facultad-->
+
+        <img
+          src="img/Logo_Facultad_CienciaNaturales_Matematica.png"
+          alt="Logo de la Facultad"
+          class="logo-facultad"
+          style="
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            margin-top: 80px;
+          "
+        />
+      </aside>
+      <!--Parrafo de presentacion-->
+
+      <!--MAIN - FOTO, PENSAMIENTO Y CARRERAS-->
+      <main>
+        <section>
+          <img
+            src="img/Graduados_Trama.jpg"
+            alt="Graduando profesionales"
+            class="estudiantes"
+          />
+          <!--Pensamiento-->
+          <div class="recuadro-pensamiento">
+            <p
+              class="centrado edu-qld-hand-uniquifier"
+              style="
+                font-weight: bold;
+                font-size: 25px;
+                color: rgb(77, 0, 0);
+                text-shadow: 1px 1px 5px rgb(255, 255, 255);
+              "
+            >
+              "Estudiar la naturaleza no es solo ver, es aprender a pensar." -
+              Marie Curie.
+            </p>
+          </div>
+        </section>
+
+        <!--PARTE DOS: OFERTA ACADEMICA-->
+        <!--Listado de las carreras disponibles en la facultad-->
+        <!--Se hace con listado que no tienen orden especifico para que todas las carreras tengan igual importancia-->
+        <h3 class="centrado" id="oferta">Oferta academica</h3>
+        <section class="caja">
+          <h4>Carreras de pregrado</h4>
+          <ul
+            class="letra-parrafos"
+            style="
+              width: 60%;
+              margin: 30px auto;
+              text-align: left;
+              color: white;
+              text-shadow: 1px 1px 3px rgb(0, 0, 0);
+            "
+          >
+            <li>
+              Profesorado en Biología para Tercer Ciclo de Educación Básica y
+              Educación Media
+            </li>
+            <li>Licenciatura en Biología</li>
+            <li>Licenciatura en Biología Marina</li>
+            <li>
+              Profesorado en Física para Tercer Ciclo de Educación Básica y
+              Educación Media
+            </li>
+            <li>Licenciatura en Física</li>
+            <li>Licenciatura en Geofísica</li>
+            <li>
+              Profesorado en Química para Tercer Ciclo de Educación Básica y
+              Educación Media
+            </li>
+            <li>Licenciatura en Ciencias Químicas</li>
+            <li>
+              Profesorado en Matemática para Tercer Ciclo de Educación Básica y
+              Educación Media
+            </li>
+            <li>Licenciatura en Matemática</li>
+            <li>Licenciatura en Estadística</li>
+            <li>Licenciatura en Enseñanza de las Ciencias Naturales</li>
+            <li>Licenciatura en Enseñanza de la Matemática</li>
+            <li>Licenciatura en Informática Educativa</li>
+          </ul>
+        </section>
+
+        <section class="caja">
+          <h4>Carreras de posgrado</h4>
+          <ul
+            class="letra-parrafos"
+            style="
+              width: 60%;
+              margin: 30px auto;
+              text-align: left;
+              color: white;
+              text-shadow: 1px 1px 3px rgb(0, 0, 0);
+            "
+          >
+            <li>Maestría en Gestión Ambiental</li>
+            <li>
+              Maestría en Manejo Sustentable de los Recursos Naturales
+              Continentales
+            </li>
+            <li>
+              Maestría en Manejo Sustentable de los Recursos Naturales
+              Costero-Marinos
+            </li>
+            <li>Maestría en Física</li>
+            <li>Maestría en Química</li>
+            <li>Maestría en Didáctica de la Matemática</li>
+            <li>Maestría en Estadística</li>
+            <li>Maestría en Matemática Fundamental</li>
+            <li>Doctorado Regional en Ciencias Físicas</li>
+            <li>Doctorado en Matemática</li>
+          </ul>
+        </section>
+      </main>
+
+      <!--ASIDE 2 - OPINIONES-->
+      <aside class="aside2" id="opiniones">
+        <h3 style="color: white">Opiniones</h3>
+        <p class="centrado letra-parrafos" style="margin-bottom: 30px">
+          Ayudanos a mejor tu experencia en nuestro sitio.
+        </p>
+        <div style="text-align: center">
+          <a
+            id="enlace"
+            href="formulario.html"
+            title="Enlace al formulario de opiones - brindanos tu opinion"
+            >Enlace al fomulario
+          </a>
+        </div>
+
+        <img
+          src="img/Logo_EscuelaMatematicas.png"
+          alt="Logo de la Escuela Matematica"
+          class="logo-matematica"
+          style="
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            margin-top: 80px;
+          "
+        />
+      </aside>
+      <!--Aca el enlace al formulario para dar opinion-->
+
+      <!--FOOTER - CONTACTOS-->
+      <footer id="contactos">
+        <h3 style="text-shadow: 2px 2px 4px rgb(255, 253, 253)">Contactos</h3>
+        <p class="centrado letra-parrafos">
+          Direccion: Final 25 Avenida Norte San Salvador.<br />
+          Telefono: 2511-2000.<br />
+          Correo: academica.naturales@ues.edu.sv
+        </p>
+      </footer>
+      <!--Por ultimo se han agregado los contactos-->
+    </div>
+  </body>
+</html>

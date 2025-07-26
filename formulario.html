@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--Fuente Satisfy desde Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fuente Roboto desde Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--Llamar al archivo Css-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      h1 {
+        width: 650px; /*Ancho */
+        padding: 20px; /*Espacio interno*/
+        border: 5px solid hsl(229, 95%, 84%); /*borde de color*/
+        margin: 20px auto; /*separacion externa y centrado horizontal*/
+        background-color: rgb(255, 255, 255); /*Color fondo*/
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+
+    <!--TITULO CON NOMBRE DE LA FACULTAD-->
+    <h1 class="centrado inicio">Facultad de Ciencias Naturales y Matemática</h1>
+    <!--Siguiente texto-->
+
+    <form id="Formulario" class="centrado letra-parrafos form">
+      <h4
+        class="centrado satisfy-regular"
+        style="
+          text-align: center;
+          font-size: 35px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 200, 0.2);
+          margin-top: 0%;
+        "
+      >
+        Queremos saber tu opinion
+      </h4>
+
+      <!--Label para ingresar el nombre de quien opina-->
+      <label for="nombre">Ingresa tu nombre completo:</label><br />
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Nombre completo"
+        required
+      /><br /><br />
+
+      <!--Para el email-->
+      <label for="correo">Ingresa tu correo electrónico:</label><br />
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="correo@ejemplo.com"
+        required
+      /><br /><br />
+
+      <!-- Saber si es estudiante de la facultad, se le agrego required para seleccionar solo uno-->
+      <label>Eres estudiante de la facultad:</label><br />
+      <input
+        class="centrado"
+        type="radio"
+        id="si"
+        name="opcion"
+        value="Si"
+        required
+      />
+      <label for="si">Si</label><br />
+      <input type="radio" id="no" name="opcion" value="No" />
+      <label for="no">No</label><br /><br />
+
+      <!-- Conocer si les gusto la página -->
+      <label>Selecciona las secccione de la página a mejorar:</label><br />
+      <input
+        type="checkbox"
+        id="presentacion"
+        name="secciones"
+        value="Presentacion"
+      />
+      <label for="presentacion">Presentacion</label><br />
+      <input
+        type="checkbox"
+        id="oferta"
+        name="secciones"
+        value="Oferta academica"
+      />
+      <label for="oferta">Oferta academica</label><br />
+      <input
+        type="checkbox"
+        id="opiniones"
+        name="secciones"
+        value="Opiniones"
+      />
+      <label for="opiniones">Opiniones</label><br />
+      <input
+        type="checkbox"
+        id="contactos"
+        name="secciones"
+        value="Contactos"
+      />
+      <label for="contactos">Contactos</label><br /><br />
+
+      <!-- Text area para commentarios -->
+      <label for="comentario">Comentarios:</label><br />
+      <textarea
+        id="comentario"
+        name="comentario"
+        rows="8"
+        cols="45"
+        placeholder="Deje aca su comentario..."
+      ></textarea
+      ><br /><br />
+
+      <!-- Boton para enviar la informacion -->
+      <input type="submit" value="Enviar" id="enviar" /><br /><br />
+    </form>
+
+    <!--Regresar a la pagina principal-->
+    <div style="text-align: center">
+      <a id="enlace" href="index.html" title="Enlace a la página principal"
+        >Regresar a página principal</a
+      >
+    </div>
+  </body>
+</html>
